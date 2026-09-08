@@ -1,0 +1,110 @@
+[
+    {
+        "titulo": "Declara una variable String",
+        "dificultad": "facil",
+        "enunciado": "Dentro del método main, declara una variable llamada nombre de tipo String.",
+        "codigo_base": "public class Main {\n\n public static void main(String[] args) {\n\n }\n}",
+        "pista": "Para declarar una variable de texto, utiliza el tipo String seguido del nombre de la variable.",
+        "leccion_corta": "Una variable en Java se declara indicando primero su tipo y después su nombre.",
+        "solucion_esperada": "public class Main {\n\n public static void main(String[] args) {\n\n String nombre;\n }\n}"
+    },
+    {
+        "titulo": "Creación y asignación de una variable",
+        "dificultad": "facil",
+        "enunciado": "Dentro del método main, crea una variable llamada numero de tipo int y, en una segunda instrucción, asígnale el valor 67.",
+        "codigo_base": "public class Main {\n\n public static void main(String[] args) {\n\n }\n}",
+        "pista": "La creación de la variable y la asignación de su valor deben realizarse en dos instrucciones diferentes.",
+        "leccion_corta": "Crear una variable y asignarle un valor son acciones diferentes. Primero se declara la variable y después se puede asignar un valor.",
+        "solucion_esperada": "public class Main {\n\n public static void main(String[] args) {\n\n int numero;\n numero = 67;\n }\n}"
+    },
+    {
+        "titulo": "Reasignar el valor de una variable",
+        "dificultad": "facil",
+        "enunciado": "Dentro del método main, declara una variable llamada numero de tipo int, asígnale el valor 67 y después asígnale el valor 100 en una nueva instrucción.",
+        "codigo_base": "public class Main {\n\n public static void main(String[] args) {\n\n }\n}",
+        "pista": "Una variable que ya fue declarada puede recibir un nuevo valor utilizando nuevamente el operador =.",
+        "leccion_corta": "Después de declarar una variable, su valor puede cambiarse mediante una nueva asignación.",
+        "solucion_esperada": "public class Main {\n\n public static void main(String[] args) {\n\n int numero;\n numero = 67;\n numero = 100;\n }\n}"
+    },
+    {
+        "titulo": "Crear y asignar un texto",
+        "dificultad": "facil",
+        "enunciado": "Dentro del método main, declara una variable llamada nombre de tipo String y, en una segunda instrucción, asígnale el texto Juan.",
+        "codigo_base": "public class Main {\n\n public static void main(String[] args) {\n\n }\n}",
+        "pista": "Para almacenar texto se utiliza el tipo String. El texto debe escribirse entre comillas dobles.",
+        "leccion_corta": "El tipo String permite almacenar texto. Las cadenas de texto se escriben entre comillas dobles.",
+        "solucion_esperada": "public class Main {\n\n public static void main(String[] args) {\n\n String nombre;\n nombre = \"Juan\";\n }\n}"
+    },
+    {
+        "titulo": "Crear y asignar un booleano",
+        "dificultad": "facil",
+        "enunciado": "Dentro del método main, declara una variable llamada activo de tipo boolean y, en una segunda instrucción, asígnale el valor true.",
+        "codigo_base": "public class Main {\n\n public static void main(String[] args) {\n\n }\n}",
+        "pista": "El tipo boolean trabaja con valores lógicos. Sus valores son true y false.",
+        "leccion_corta": "El tipo boolean representa un valor lógico y solo puede almacenar true o false.",
+        "solucion_esperada": "public class Main {\n\n public static void main(String[] args) {\n\n boolean activo;\n activo = true;\n }\n}"
+    },
+    {
+        "titulo": "Crear y asignar un número decimal",
+        "dificultad": "facil",
+        "enunciado": "Dentro del método main, declara una variable llamada precio de tipo double y, en una segunda instrucción, asígnale el valor 19.99.",
+        "codigo_base": "public class Main {\n\n public static void main(String[] args) {\n\n }\n}",
+        "pista": "El tipo double permite almacenar números que tienen una parte decimal.",
+        "leccion_corta": "El tipo double se utiliza para representar números decimales en Java.",
+        "solucion_esperada": "public class Main {\n\n public static void main(String[] args) {\n\n double precio;\n precio = 19.99;\n }\n}"
+    },
+    {
+        "titulo": "Usar una variable en una operación",
+        "dificultad": "facil",
+        "enunciado": "Dentro del método main, declara una variable llamada numero de tipo int y asígnale el valor 67. Después, declara una variable llamada resultado de tipo int y asígnale el resultado de sumar numero y 10.",
+        "codigo_base": "public class Main {\n\n public static void main(String[] args) {\n\n }\n}",
+        "pista": "Una variable puede utilizarse dentro de una operación escribiendo su nombre.",
+        "leccion_corta": "Las variables pueden utilizarse en expresiones y operaciones para trabajar con el valor que almacenan.",
+        "solucion_esperada": "public class Main {\n\n public static void main(String[] args) {\n\n int numero;\n numero = 67;\n int resultado;\n resultado = numero + 10;\n }\n}"
+    },
+    {
+        "titulo": "Convención de nombres",
+        "dificultad": "facil",
+        "enunciado": "Dentro del método main, declara una variable String llamada nombreCompleto y asígnale el texto Juan Soto. Después, declara una variable int llamada edadUsuario y asígnale el valor 19.",
+        "codigo_base": "public class Main {\n\n public static void main(String[] args) {\n\n }\n}",
+        "pista": "Utiliza nombres descriptivos y escribe los nombres compuestos usando camelCase.",
+        "leccion_corta": "En Java, los nombres de variables suelen escribirse en camelCase y deben describir claramente el dato que almacenan.",
+        "solucion_esperada": "public class Main {\n\n public static void main(String[] args) {\n\n String nombreCompleto;\n nombreCompleto = \"Juan Soto\";\n int edadUsuario;\n edadUsuario = 19;\n }\n}"
+    },
+    {
+        "titulo": "Condición if simple",
+        "dificultad": "facil",
+        "enunciado": "Dentro del método main, declara una variable llamada edad de tipo int y asígnale el valor 20. Después, utiliza un if para comprobar si edad es mayor o igual que 18 y, dentro del if, asigna true a una variable llamada esMayor.",
+        "codigo_base": "public class Main {\n\n public static void main(String[] args) {\n\n }\n}",
+        "pista": "La estructura if permite ejecutar instrucciones cuando una condición es verdadera. Utiliza >= para comprobar si un valor es mayor o igual que otro.",
+        "leccion_corta": "La instrucción if permite tomar decisiones ejecutando un bloque de código únicamente cuando una condición se cumple.",
+        "solucion_esperada": "public class Main {\n\n public static void main(String[] args) {\n\n int edad;\n edad = 20;\n boolean esMayor;\n if (edad >= 18) {\n esMayor = true;\n }\n }\n}"
+    },
+    {
+        "titulo": "Comparar números con if",
+        "dificultad": "facil",
+        "enunciado": "Dentro del método main, declara una variable llamada numero de tipo int y asígnale el valor 10. Después, utiliza un if para comprobar si numero es mayor que 5 y, dentro del if, asigna true a una variable llamada esMayor.",
+        "codigo_base": "public class Main {\n\n public static void main(String[] args) {\n\n }\n}",
+        "pista": "Para comprobar que un número es mayor que otro, utiliza el operador > dentro de la condición.",
+        "leccion_corta": "Los operadores de comparación permiten evaluar relaciones entre valores, como si un número es mayor que otro.",
+        "solucion_esperada": "public class Main {\n\n public static void main(String[] args) {\n\n int numero;\n numero = 10;\n boolean esMayor;\n if (numero > 5) {\n esMayor = true;\n }\n }\n}"
+    },
+    {
+        "titulo": "Usar if y else",
+        "dificultad": "facil",
+        "enunciado": "Dentro del método main, declara una variable llamada edad de tipo int y asígnale el valor 16. Después, utiliza if y else para comprobar si edad es mayor o igual que 18. Si se cumple, asigna true a una variable llamada esMayorDeEdad; de lo contrario, asígnale false.",
+        "codigo_base": "public class Main {\n\n public static void main(String[] args) {\n\n }\n}",
+        "pista": "Utiliza else para indicar qué instrucciones deben ejecutarse cuando la condición del if es falsa.",
+        "leccion_corta": "La estructura if/else permite elegir entre dos caminos: uno cuando la condición es verdadera y otro cuando es falsa.",
+        "solucion_esperada": "public class Main {\n\n public static void main(String[] args) {\n\n int edad;\n edad = 16;\n boolean esMayorDeEdad;\n if (edad >= 18) {\n esMayorDeEdad = true;\n } else {\n esMayorDeEdad = false;\n }\n }\n}"
+    },
+    {
+        "titulo": "Combinar condiciones con AND",
+        "dificultad": "medio",
+        "enunciado": "Dentro del método main, declara una variable llamada edad de tipo int y asígnale el valor 20. Después, declara una variable llamada tieneEntrada de tipo boolean y asígnale true. Utiliza un if con el operador && para comprobar que edad es mayor o igual que 18 y que tieneEntrada es true. Dentro del if, asigna true a una variable llamada puedeEntrar.",
+        "codigo_base": "public class Main {\n\n public static void main(String[] args) {\n\n }\n}",
+        "pista": "El operador && permite exigir que dos condiciones sean verdaderas al mismo tiempo.",
+        "leccion_corta": "Los operadores lógicos permiten combinar condiciones. && representa una condición AND: ambas condiciones deben ser verdaderas.",
+        "solucion_esperada": "public class Main {\n\n public static void main(String[] args) {\n\n int edad;\n edad = 20;\n boolean tieneEntrada;\n tieneEntrada = true;\n boolean puedeEntrar;\n if (edad >= 18 && tieneEntrada == true) {\n puedeEntrar = true;\n }\n }\n}"
+    }
+]
