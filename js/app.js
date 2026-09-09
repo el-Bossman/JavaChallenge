@@ -98,14 +98,6 @@ async function init() {
 
     try {
 
-        await loadChallenges();
-
-        renderChallengeList();
-
-        loadChallenge(0);
-
-        updateProgress();
-
         editor = CodeMirror.fromTextArea(
             codeEditor,
             {
@@ -117,6 +109,16 @@ async function init() {
                 indentWithTabs: false
             }
         );
+
+        await loadChallenges();
+
+        renderChallengeList();
+
+        loadChallenge(0);
+
+        updateProgress();
+
+       
 
         connectEvents();
 
