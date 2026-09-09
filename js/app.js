@@ -312,10 +312,10 @@ function loadChallenge(index) {
 
     /* ---------- Código ---------- */
 
-    codeEditor.value =
-        challenge.codigo_base;
+    editor.setValue( 
+        challenge.codigo_base
 
-
+    )
     /* ---------- Pista ---------- */
 
     hintContent.textContent =
@@ -371,8 +371,10 @@ function resetCode() {
         challenges[currentChallenge];
 
 
-    codeEditor.value =
-        challenge.codigo_base;
+    editor.SetValue(
+        challenge.codigo_base
+    ) 
+        
 
 
     clearOutput();
