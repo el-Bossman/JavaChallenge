@@ -371,7 +371,7 @@ function resetCode() {
         challenges[currentChallenge];
 
 
-    editor.SetValue(
+    editor.setValue(
         challenge.codigo_base
     ) 
         
