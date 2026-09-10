@@ -106,5 +106,77 @@
         "pista": "El operador && permite exigir que dos condiciones sean verdaderas al mismo tiempo.",
         "leccion_corta": "Los operadores lógicos permiten combinar condiciones. && representa una condición AND: ambas condiciones deben ser verdaderas.",
         "solucion_esperada": "public class Main {\n\n public static void main(String[] args) {\n\n int edad;\n edad = 20;\n boolean tieneEntrada;\n tieneEntrada = true;\n boolean puedeEntrar;\n if (edad >= 18 && tieneEntrada == true) {\n puedeEntrar = true;\n }\n }\n}"
-    }
+    },
+    {
+    "titulo": "★ Creación y asignación en una sola línea",
+    "dificultad": "facil",
+    "enunciado": "De ahora en adelante vamos a crear y asingnar una variable en una sola linea \n Dentro del método main, declara una variable llamada nombre de tipo String y, en la misma instrucción, asígnale el texto \"juan\".",
+    "codigo_base": "public class Main {\n\n public static void main(String[] args) {\n\n }\n}",
+    "pista": "Puedes declarar una variable y asignarle su valor utilizando una sola instrucción.",
+    "leccion_corta": "En Java, una variable puede declararse y recibir un valor en la misma línea utilizando el operador =.",
+    "solucion_esperada": "public class Main {\n\n public static void main(String[] args) {\n\n String nombre = \"juan\";\n }\n}"
+  },
+  {
+    "titulo": "Operador OR",
+    "dificultad": "medio",
+    "enunciado": "Dentro del método main, declara una variable llamada esEstudiante de tipo boolean y, en la misma instrucción, asígnale el valor true. Después, declara una variable llamada tieneDescuento de tipo boolean y, en la misma instrucción, asígnale el valor false. Finalmente, utiliza un if con el operador || para comprobar si esEstudiante o tieneDescuento es true y, dentro del if, asigna true a una variable llamada puedeComprar.",
+    "codigo_base": "public class Main {\n\n public static void main(String[] args) {\n\n }\n}",
+    "pista": "El operador || permite combinar dos condiciones y se cumple cuando al menos una de ellas es verdadera.",
+    "leccion_corta": "El operador lógico || representa OR y permite comprobar si al menos una de dos condiciones es verdadera.",
+    "solucion_esperada": "public class Main {\n\n public static void main(String[] args) {\n\n boolean esEstudiante = true;\n boolean tieneDescuento = false;\n boolean puedeComprar;\n if (esEstudiante || tieneDescuento) {\n puedeComprar = true;\n }\n }\n}"
+  },
+  {
+    "titulo": "Operador NOT",
+    "dificultad": "medio",
+    "enunciado": "Dentro del método main, declara una variable llamada activo de tipo boolean y, en la misma instrucción, asígnale el valor false. Después, declara una variable llamada estaInactivo de tipo boolean y, en la misma instrucción, asígnale el resultado de negar la variable activo utilizando el operador !.",
+    "codigo_base": "public class Main {\n\n public static void main(String[] args) {\n\n }\n}",
+    "pista": "El operador ! invierte un valor booleano: true se convierte en false y false se convierte en true.",
+    "leccion_corta": "El operador ! permite negar una expresión booleana e invertir su valor lógico.",
+    "solucion_esperada": "public class Main {\n\n public static void main(String[] args) {\n\n boolean activo = false;\n boolean estaInactivo = !activo;\n }\n}"
+  },
+  {
+    "titulo": "Imprimir una variable",
+    "dificultad": "facil",
+    "enunciado": "Dentro del método main, declara una variable llamada nombre de tipo String y, en la misma instrucción, asígnale el texto \"juan\". Después, utiliza System.out.println para imprimir el contenido de la variable nombre.",
+    "codigo_base": "public class Main {\n\n public static void main(String[] args) {\n\n }\n}",
+    "pista": "System.out.println puede recibir el nombre de una variable para mostrar el valor que contiene.",
+    "leccion_corta": "System.out.println permite mostrar en la consola el valor almacenado en una variable.",
+    "solucion_esperada": "public class Main {\n\n public static void main(String[] args) {\n\n String nombre = \"juan\";\n System.out.println(nombre);\n }\n}"
+  },
+  {
+    "titulo": "Else if",
+    "dificultad": "medio",
+    "enunciado": "Dentro del método main, declara una variable llamada edad de tipo int y, en la misma instrucción, asígnale el valor 20. Después, declara una variable llamada categoria de tipo String sin asignarle un valor. Finalmente, utiliza if, else if y else para comprobar edad: si edad es mayor o igual que 18, asigna el texto \"adulto\" a categoria; si no se cumple esa condición pero edad es mayor o igual que 13, asigna el texto \"adolescente\" a categoria; en cualquier otro caso, asigna el texto \"niño\" a categoria.",
+    "codigo_base": "public class Main {\n\n public static void main(String[] args) {\n\n }\n}",
+    "pista": "Utiliza else if para comprobar una segunda condición únicamente cuando la condición anterior no se cumple.",
+    "leccion_corta": "La estructura if, else if y else permite evaluar varias condiciones en orden y ejecutar únicamente una de sus ramas.",
+    "solucion_esperada": "public class Main {\n\n public static void main(String[] args) {\n\n int edad = 20;\n String categoria;\n if (edad >= 18) {\n categoria = \"adulto\";\n } else if (edad >= 13) {\n categoria = \"adolescente\";\n } else {\n categoria = \"niño\";\n }\n }\n}"
+  },
+  {
+    "titulo": "Switch",
+    "dificultad": "medio",
+    "enunciado": "Dentro del método main, declara una variable llamada opcion de tipo int y, en la misma instrucción, asígnale el valor 2. Después, declara una variable llamada resultado de tipo String sin asignarle un valor. Finalmente, utiliza switch sobre opcion. En el case 1, asigna el texto \"Uno\" a resultado y utiliza break. En el case 2, asigna el texto \"Dos\" a resultado y utiliza break.",
+    "codigo_base": "public class Main {\n\n public static void main(String[] args) {\n\n }\n}",
+    "pista": "switch permite seleccionar un bloque según el valor de una variable. Cada case debe terminar con break.",
+    "leccion_corta": "La estructura switch permite ejecutar diferentes instrucciones dependiendo del valor de una expresión.",
+    "solucion_esperada": "public class Main {\n\n public static void main(String[] args) {\n\n int opcion = 2;\n String resultado;\n switch (opcion) {\n case 1:\n resultado = \"Uno\";\n break;\n case 2:\n resultado = \"Dos\";\n break;\n }\n }\n}"
+  },
+  {
+    "titulo": "Bucle for",
+    "dificultad": "medio",
+    "enunciado": "Dentro del método main, utiliza un bucle for que declare una variable llamada i de tipo int comenzando en 0, continúe mientras i sea menor que 5 y aumente i en 1 después de cada iteración. Deja el bloque del for vacío.",
+    "codigo_base": "public class Main {\n\n public static void main(String[] args) {\n\n }\n}",
+    "pista": "Un for define el valor inicial, la condición de continuación y el incremento.",
+    "leccion_corta": "El bucle for permite repetir un bloque de código definiendo un valor inicial, una condición y una actualización.",
+    "solucion_esperada": "public class Main {\n\n public static void main(String[] args) {\n\n for (int i = 0; i < 5; i++) {\n }\n }\n}"
+  },
+  {
+    "titulo": "For con print",
+    "dificultad": "medio",
+    "enunciado": "Dentro del método main, utiliza un bucle for que declare una variable llamada i de tipo int comenzando en 0, continúe mientras i sea menor que 5 y aumente i en 1 después de cada iteración. Dentro del bloque del for, utiliza System.out.println para imprimir el valor actual de i.",
+    "codigo_base": "public class Main {\n\n public static void main(String[] args) {\n\n }\n}",
+    "pista": "Dentro del bucle puedes utilizar la variable i para imprimir el valor de cada iteración.",
+    "leccion_corta": "Un bucle for puede utilizarse junto con System.out.println para repetir una acción y mostrar valores en cada iteración.",
+    "solucion_esperada": "public class Main {\n\n public static void main(String[] args) {\n\n for (int i = 0; i < 5; i++) {\n System.out.println(i);\n }\n }\n}"
+  }
 ]
