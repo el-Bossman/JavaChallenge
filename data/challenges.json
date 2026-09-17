@@ -178,5 +178,131 @@
     "pista": "Dentro del bucle puedes utilizar la variable i para imprimir el valor de cada iteración.",
     "leccion_corta": "Un bucle for puede utilizarse junto con System.out.println para repetir una acción y mostrar valores en cada iteración.",
     "solucion_esperada": "public class Main {\n\n public static void main(String[] args) {\n\n for (int i = 0; i < 5; i++) {\n System.out.println(i);\n }\n }\n}"
-  }
+  },
+   {
+        "titulo": "Incrementa un contador con while",
+        "dificultad": "facil",
+        "enunciado": "Declara una variable llamada contador de tipo int con valor inicial 0. Utiliza un ciclo while que se ejecute mientras contador sea menor o igual que 10. Dentro del ciclo, incrementa contador en 1.",
+        "codigo_base": "public class Main {\n\n    public static void main(String[] args) {\n\n        int contador = 0;\n\n       \n\n    }\n}",
+        "pista": "Utiliza while para repetir mientras la condición sea verdadera. Para incrementar contador en 1 puedes utilizar el operador ++.",
+        "leccion_corta": "El ciclo while repite un bloque de código mientras su condición sea verdadera. El operador ++ incrementa una variable en 1.",
+        "solucion_esperada": "public class Main {\n\n    public static void main(String[] args) {\n\n        int contador = 0;\n\n        while (contador <= 10) {\n            contador++;\n        }\n    }\n}"
+    },
+    {
+        "titulo": "Cuenta hasta 5",
+        "dificultad": "facil",
+        "enunciado": "Declara una variable llamada contador de tipo int con valor inicial 0. Utiliza un ciclo while que se ejecute mientras contador sea menor que 5. Dentro del ciclo, incrementa contador en 1.",
+        "codigo_base": "public class Main {\n\n    public static void main(String[] args) {\n\n        int contador = 0;\n\n        \n\n    }\n}",
+        "pista": "La condición del while debe comprobar que contador todavía sea menor que 5. Utiliza ++ para incrementar su valor.",
+        "leccion_corta": "La condición de un while determina cuántas veces se repite el ciclo. Es importante actualizar la variable utilizada en la condición para evitar un ciclo infinito.",
+        "solucion_esperada": "public class Main {\n\n    public static void main(String[] args) {\n\n        int contador = 0;\n\n        while (contador < 5) {\n            contador++;\n        }\n    }\n}"
+    },
+    {
+        "titulo": "Cuenta regresiva con while",
+        "dificultad": "facil",
+        "enunciado": "Declara una variable llamada contador de tipo int con valor inicial 10. Utiliza un ciclo while que se ejecute mientras contador sea mayor que 0. Dentro del ciclo, disminuye contador en 1.",
+        "codigo_base": "public class Main {\n\n    public static void main(String[] args) {\n\n        int contador = 10;\n\n       \n\n    }\n}",
+        "pista": "Esta vez necesitas disminuir el valor de contador. Recuerda que en Java existen los operadores ++ para incrementar y -- para disminuir una variable en 1.",
+        "leccion_corta": "El operador ++ incrementa una variable en 1, mientras que -- la disminuye en 1. Ambos son útiles para controlar ciclos mediante contadores.",
+        "solucion_esperada": "public class Main {\n\n    public static void main(String[] args) {\n\n        int contador = 10;\n\n        while (contador > 0) {\n            contador--;\n        }\n    }\n}"
+    },
+    {
+        "titulo": "Crear una clase Persona",
+        "dificultad": "facil",
+        "enunciado": "Crea una clase pública llamada Persona.",
+        "codigo_base": "",
+        "pista": "Una clase pública se declara utilizando la palabra public, seguida de class y el nombre de la clase. El nombre de la clase debe ser Persona.",
+        "leccion_corta": "Una clase es una estructura que permite definir las características y comportamientos que tendrán sus objetos.",
+        "solucion_esperada": "public class Persona {\n}"
+    },
+    {
+        "titulo": "Crear atributos privados",
+        "dificultad": "facil",
+        "enunciado": "Dentro de la clase Persona, crea tres atributos privados: un String llamado nombre, un int llamado edad y un boolean llamado activo.",
+        "codigo_base": "public class Persona {\n}",
+        "pista": "Cada atributo debe comenzar con private, seguido por su tipo y su nombre. Necesitas un String llamado nombre, un int llamado edad y un boolean llamado activo.",
+        "leccion_corta": "Los atributos representan los datos que pertenecen a una clase. El modificador private restringe el acceso directo a estos atributos.",
+        "solucion_esperada": "public class Persona {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n}"
+    },
+    {
+        "titulo": "Crear un objeto Persona",
+        "dificultad": "facil",
+        "enunciado": "Dentro del método main, crea un objeto de la clase Persona llamado persona.",
+        "codigo_base": "public class Main {\n\n    public static void main(String[] args) {\n\n    }\n}",
+        "pista": "Para crear un objeto utiliza el tipo Persona, el nombre persona, el operador = y la palabra new seguida de Persona().",
+        "leccion_corta": "Un objeto es una instancia de una clase. La palabra new permite crear una nueva instancia de una clase.",
+        "solucion_esperada": "public class Main {\n\n    public static void main(String[] args) {\n\n        Persona persona = new Persona();\n    }\n}"
+    },
+    {
+        "titulo": "Crear un método",
+        "dificultad": "facil",
+        "enunciado": "Dentro de la clase Persona, crea un método público llamado saludar que no reciba parámetros y que utilice System.out.println para mostrar el texto \"Hola clase\".",
+        "codigo_base": "public class Persona {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n\n}",
+        "pista": "El método debe ser public, no retornar ningún valor, llamarse saludar y tener paréntesis vacíos. Para no retornar ningún valor utiliza void. Dentro del método utiliza System.out.println(\"Hola clase\").",
+        "leccion_corta": "Los métodos representan comportamientos de una clase. Un método void realiza una acción pero no devuelve un valor.",
+        "solucion_esperada": "public class Persona {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n\n    public void saludar() {\n        System.out.println(\"Hola clase\");\n    }\n}"
+    },
+    {
+        "titulo": "Llamar a un método",
+        "dificultad": "facil",
+        "enunciado": "Dentro de main, crea un objeto de la clase Persona llamado persona y llama a su método saludar.",
+        "codigo_base": "public class Main {\n\n    public static void main(String[] args) {\n\n    }\n}",
+        "pista": "Primero necesitas crear el objeto con Persona persona = new Persona(). Después utiliza el nombre del objeto seguido de un punto y el nombre del método: persona.saludar().",
+        "leccion_corta": "Para utilizar un método de un objeto se escribe el nombre del objeto, un punto y el nombre del método seguido de paréntesis.",
+        "solucion_esperada": "public class Main {\n\n    public static void main(String[] args) {\n\n        Persona persona = new Persona();\n        persona.saludar();\n    }\n}"
+    },
+    {
+        "titulo": "Crear un getter",
+        "dificultad": "medio",
+        "enunciado": "Dentro de la clase Persona, crea un método público llamado getNombre que retorne el valor del atributo nombre.",
+        "codigo_base": "public class Persona {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n\n    public void saludar() {\n        System.out.println(\"Hola clase\");\n    }\n\n}",
+        "pista": "El método debe ser public y retornar un String. Su nombre debe ser getNombre y no debe recibir parámetros. Dentro del método utiliza return para devolver el atributo nombre.",
+        "leccion_corta": "Un getter es un método que permite obtener el valor de un atributo privado de una clase.",
+        "solucion_esperada": "public class Persona {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n\n    public void saludar() {\n        System.out.println(\"Hola clase\");\n    }\n\n    public String getNombre() {\n        return nombre;\n    }\n}"
+    },
+    {
+        "titulo": "Crear un setter",
+        "dificultad": "medio",
+        "enunciado": "Dentro de la clase Persona, crea un método público llamado setNombre que reciba un parámetro String llamado nombre y utilice ese parámetro para modificar el atributo nombre.",
+        "codigo_base": "public class Persona {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n\n    public void saludar() {\n        System.out.println(\"Hola clase\");\n    }\n\n    public String getNombre() {\n        return nombre;\n    }\n\n}",
+        "pista": "El método debe ser public, llamarse setNombre y recibir un String llamado nombre. Como el atributo y el parámetro tienen el mismo nombre, utiliza this.nombre para referirte al atributo y asignarle el parámetro.",
+        "leccion_corta": "Un setter es un método que permite modificar el valor de un atributo privado. La palabra this permite referirse al atributo del objeto actual.",
+        "solucion_esperada": "public class Persona {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n\n    public void saludar() {\n        System.out.println(\"Hola clase\");\n    }\n\n    public String getNombre() {\n        return nombre;\n    }\n\n    public void setNombre(String nombre) {\n        this.nombre = nombre;\n    }\n}"
+    },
+    {
+        "titulo": "Utilizar getter y setter",
+        "dificultad": "medio",
+        "enunciado": "Dentro de main, crea un objeto de la clase Persona llamado persona. Utiliza setNombre para asignarle el nombre \"Juan\" y después utiliza getNombre para obtener e imprimir el nombre.",
+        "codigo_base": "public class Main {\n\n    public static void main(String[] args) {\n\n    }\n}",
+        "pista": "Primero crea el objeto Persona. Para asignar el nombre utiliza persona.setNombre(\"Juan\"). Para obtenerlo utiliza persona.getNombre() y pasa ese resultado a System.out.println.",
+        "leccion_corta": "Los getters y setters permiten acceder a atributos privados mediante métodos públicos, manteniendo el encapsulamiento de la clase.",
+        "solucion_esperada": "public class Main {\n\n    public static void main(String[] args) {\n\n        Persona persona = new Persona();\n        persona.setNombre(\"Juan\");\n        System.out.println(persona.getNombre());\n    }\n}"
+    },
+    {
+        "titulo": "Crear un constructor",
+        "dificultad": "medio",
+        "enunciado": "Dentro de la clase Persona, crea un constructor público sin parámetros que asigne el valor \"Sin nombre\" al atributo nombre.",
+        "codigo_base": "public class Persona {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n\n    public void saludar() {\n        System.out.println(\"Hola clase\");\n    }\n\n    public String getNombre() {\n        return nombre;\n    }\n\n    public void setNombre(String nombre) {\n        this.nombre = nombre;\n    }\n\n}",
+        "pista": "Un constructor tiene el mismo nombre que la clase y no tiene tipo de retorno. Debe ser public, llamarse Persona y tener los paréntesis vacíos. Dentro asigna \"Sin nombre\" al atributo nombre.",
+        "leccion_corta": "Un constructor se ejecuta cuando se crea un objeto y permite establecer su estado inicial.",
+        "solucion_esperada": "public class Persona {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n\n    public void saludar() {\n        System.out.println(\"Hola clase\");\n    }\n\n    public String getNombre() {\n        return nombre;\n    }\n\n    public void setNombre(String nombre) {\n        this.nombre = nombre;\n    }\n\n    public Persona() {\n        nombre = \"Sin nombre\";\n    }\n}"
+    },
+    {
+        "titulo": "Constructor con parámetros",
+        "dificultad": "medio",
+        "enunciado": "Modifica la clase Persona para que tenga un constructor público que reciba un parámetro String llamado nombre y utilice ese parámetro para inicializar el atributo nombre.",
+        "codigo_base": "public class Persona {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n\n    public void saludar() {\n        System.out.println(\"Hola clase\");\n    }\n\n    public String getNombre() {\n        return nombre;\n    }\n\n    public void setNombre(String nombre) {\n        this.nombre = nombre;\n    }\n\n}",
+        "pista": "El constructor debe llamarse Persona y recibir String nombre. Como el parámetro y el atributo tienen el mismo nombre, utiliza this.nombre = nombre para guardar el parámetro en el atributo.",
+        "leccion_corta": "Un constructor puede recibir parámetros para crear objetos con valores iniciales específicos.",
+        "solucion_esperada": "public class Persona {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n\n    public void saludar() {\n        System.out.println(\"Hola clase\");\n    }\n\n    public String getNombre() {\n        return nombre;\n    }\n\n    public void setNombre(String nombre) {\n        this.nombre = nombre;\n    }\n\n    public Persona(String nombre) {\n        this.nombre = nombre;\n    }\n}"
+    },
+    {
+        "titulo": "Crear un objeto con constructor",
+        "dificultad": "medio",
+        "enunciado": "Dentro de main, crea un objeto de la clase Persona llamado persona utilizando el constructor con parámetros y asígnale el nombre \"Juan\". Después, utiliza getNombre para obtener e imprimir el nombre.",
+        "codigo_base": "public class Main {\n\n    public static void main(String[] args) {\n\n    }\n}",
+        "pista": "Al crear el objeto utiliza new Persona(\"Juan\") para enviar el nombre al constructor. Después puedes utilizar persona.getNombre() dentro de System.out.println para obtener el nombre.",
+        "leccion_corta": "Un constructor con parámetros permite crear objetos proporcionando sus valores iniciales directamente al momento de utilizar new.",
+        "solucion_esperada": "public class Main {\n\n    public static void main(String[] args) {\n\n        Persona persona = new Persona(\"Juan\");\n        System.out.println(persona.getNombre());\n    }\n}"
+    }
 ]
