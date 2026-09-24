@@ -304,5 +304,113 @@
         "pista": "Al crear el objeto utiliza new Persona(\"Juan\") para enviar el nombre al constructor. Después puedes utilizar persona.getNombre() dentro de System.out.println para obtener el nombre.",
         "leccion_corta": "Un constructor con parámetros permite crear objetos proporcionando sus valores iniciales directamente al momento de utilizar new.",
         "solucion_esperada": "public class Main {\n\n    public static void main(String[] args) {\n\n        Persona persona = new Persona(\"Juan\");\n        System.out.println(persona.getNombre());\n    }\n}"
-    }
+    },
+    {
+    "titulo": "Crear un método que retorne un String",
+    "dificultad": "facil",
+    "enunciado": "Dentro de la clase Persona, crea un método público llamado obtenerSaludo que no reciba parámetros y retorne un String. Dentro del método, utiliza return para retornar exactamente el texto \"Hola\".",
+    "codigo_base": "public class Persona {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n\n    public void saludar() {\n        System.out.println(\"Hola clase\");\n    }\n\n    public String getNombre() {\n        return nombre;\n    }\n\n    public void setNombre(String nombre) {\n        this.nombre = nombre;\n    }\n\n    public Persona(String nombre) {\n        this.nombre = nombre;\n    }\n\n}",
+    "pista": "Primero declara el método utilizando public. Como el método debe devolver un texto, utiliza String como tipo de retorno. El método debe llamarse obtenerSaludo y no debe recibir parámetros, por lo que los paréntesis deben quedar vacíos. Dentro del método utiliza return seguido del texto \"Hola\" y termina la instrucción con punto y coma.",
+    "leccion_corta": "Un método puede devolver un valor utilizando un tipo de retorno distinto de void. Cuando el método devuelve texto, su tipo de retorno es String y puede utilizar return para entregar ese texto.",
+    "solucion_esperada": "public class Persona {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n\n    public void saludar() {\n        System.out.println(\"Hola clase\");\n    }\n\n    public String getNombre() {\n        return nombre;\n    }\n\n    public void setNombre(String nombre) {\n        this.nombre = nombre;\n    }\n\n    public Persona(String nombre) {\n        this.nombre = nombre;\n    }\n\n    public String obtenerSaludo() {\n        return \"Hola\";\n    }\n}"
+  },
+  {
+    "titulo": "Crear un método que retorne un int",
+    "dificultad": "facil",
+    "enunciado": "Dentro de la clase Persona, crea un método público llamado obtenerEdad que no reciba parámetros y retorne un int. Dentro del método, utiliza return para retornar el valor del atributo edad.",
+    "codigo_base": "public class Persona {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n\n    public void saludar() {\n        System.out.println(\"Hola clase\");\n    }\n\n    public String getNombre() {\n        return nombre;\n    }\n\n    public void setNombre(String nombre) {\n        this.nombre = nombre;\n    }\n\n    public Persona(String nombre) {\n        this.nombre = nombre;\n    }\n\n    public String obtenerSaludo() {\n        return \"Hola\";\n    }\n\n}",
+    "pista": "El método debe ser público y su nombre debe ser obtenerEdad. Como debe retornar un número entero, utiliza int como tipo de retorno. El método no recibe parámetros, así que deja los paréntesis vacíos. Dentro del método utiliza return seguido del nombre del atributo edad.",
+    "leccion_corta": "Un método puede retornar diferentes tipos de datos. Si debe devolver un número entero, su tipo de retorno debe ser int.",
+    "solucion_esperada": "public class Persona {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n\n    public void saludar() {\n        System.out.println(\"Hola clase\");\n    }\n\n    public String getNombre() {\n        return nombre;\n    }\n\n    public void setNombre(String nombre) {\n        this.nombre = nombre;\n    }\n\n    public Persona(String nombre) {\n        this.nombre = nombre;\n    }\n\n    public String obtenerSaludo() {\n        return \"Hola\";\n    }\n\n    public int obtenerEdad() {\n        return edad;\n    }\n}"
+  },
+  {
+    "titulo": "Crear métodos para activar y desactivar",
+    "dificultad": "facil",
+    "enunciado": "Dentro de la clase Persona, crea dos métodos públicos llamados activar y desactivar. Ninguno de los dos métodos debe recibir parámetros ni retornar ningún valor. El método activar debe asignar true al atributo activo y el método desactivar debe asignar false al atributo activo. Después, dentro del método main, crea un objeto de la clase Persona llamado persona utilizando el constructor que recibe un nombre. Llama primero al método activar y después al método desactivar.",
+    "codigo_base": "public class Persona {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n\n    public void saludar() {\n        System.out.println(\"Hola clase\");\n    }\n\n    public String getNombre() {\n        return nombre;\n    }\n\n    public void setNombre(String nombre) {\n        this.nombre = nombre;\n    }\n\n    public Persona(String nombre) {\n        this.nombre = nombre;\n    }\n\n    public String obtenerSaludo() {\n        return \"Hola\";\n    }\n\n    public int obtenerEdad() {\n        return edad;\n    }\n\n}",
+    "pista": "Primero crea el método activar. Debe ser public, utilizar void porque no retorna ningún valor, llamarse activar y tener los paréntesis vacíos. Dentro del método asigna true al atributo activo. Después crea el método desactivar siguiendo la misma estructura, pero asignando false a activo. Finalmente, en main crea el objeto persona utilizando new Persona(\"Juan\"). Después escribe persona.activar() y en una nueva instrucción persona.desactivar().",
+    "leccion_corta": "Los métodos no siempre devuelven valores. Un método void puede utilizarse para realizar una acción, como cambiar el estado de un atributo de un objeto.",
+    "solucion_esperada": "public class Persona {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n\n    public void saludar() {\n        System.out.println(\"Hola clase\");\n    }\n\n    public String getNombre() {\n        return nombre;\n    }\n\n    public void setNombre(String nombre) {\n        this.nombre = nombre;\n    }\n\n    public Persona(String nombre) {\n        this.nombre = nombre;\n    }\n\n    public String obtenerSaludo() {\n        return \"Hola\";\n    }\n\n    public int obtenerEdad() {\n        return edad;\n    }\n\n    public void activar() {\n        activo = true;\n    }\n\n    public void desactivar() {\n        activo = false;\n    }\n}"
+  },
+  {
+    "titulo": "Sobrescribir toString",
+    "dificultad": "medio",
+    "enunciado": "Dentro de la clase Persona, crea un método público llamado toString que no reciba parámetros y retorne un String. El método debe retornar el valor del atributo nombre.",
+    "codigo_base": "public class Persona {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n\n    public void saludar() {\n        System.out.println(\"Hola clase\");\n    }\n\n    public String getNombre() {\n        return nombre;\n    }\n\n    public void setNombre(String nombre) {\n        this.nombre = nombre;\n    }\n\n    public Persona(String nombre) {\n        this.nombre = nombre;\n    }\n\n    public String obtenerSaludo() {\n        return \"Hola\";\n    }\n\n    public int obtenerEdad() {\n        return edad;\n    }\n\n    public void activar() {\n        activo = true;\n    }\n\n    public void desactivar() {\n        activo = false;\n    }\n\n}",
+    "pista": "El método debe ser public y debe retornar un String. Su nombre especial es toString y no recibe parámetros, por lo que los paréntesis quedan vacíos. Dentro del método utiliza return para devolver el atributo nombre. En este ejercicio no necesitas utilizar @Override.",
+    "leccion_corta": "toString es un método utilizado para representar un objeto mediante texto. Puede definirse en una clase para indicar qué texto debe devolver cuando se solicita la representación del objeto.",
+    "solucion_esperada": "public class Persona {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n\n    public void saludar() {\n        System.out.println(\"Hola clase\");\n    }\n\n    public String getNombre() {\n        return nombre;\n    }\n\n    public void setNombre(String nombre) {\n        this.nombre = nombre;\n    }\n\n    public Persona(String nombre) {\n        this.nombre = nombre;\n    }\n\n    public String obtenerSaludo() {\n        return \"Hola\";\n    }\n\n    public int obtenerEdad() {\n        return edad;\n    }\n\n    public void activar() {\n        activo = true;\n    }\n\n    public void desactivar() {\n        activo = false;\n    }\n\n    public String toString() {\n        return nombre;\n    }\n}"
+  },
+  {
+    "titulo": "Crear una clase padre",
+    "dificultad": "facil",
+    "enunciado": "Crea una clase pública llamada Animal. Dentro de la clase Animal, crea tres atributos privados: un String llamado nombre, un int llamado edad y un boolean llamado activo.",
+    "codigo_base": "",
+    "pista": "Primero escribe public class y después el nombre Animal. Abre y cierra las llaves de la clase. Dentro de las llaves crea cada atributo comenzando con private. El primer atributo debe ser un String llamado nombre, el segundo un int llamado edad y el tercero un boolean llamado activo. Cada atributo debe terminar con punto y coma.",
+    "leccion_corta": "Una clase padre puede contener atributos y métodos que posteriormente serán heredados por otras clases. Los atributos privados pertenecen a la clase y no son accesibles directamente desde fuera de ella.",
+    "solucion_esperada": "public class Animal {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n}"
+  },
+  {
+    "titulo": "Crear una clase hija con extends",
+    "dificultad": "facil",
+    "enunciado": "La clase Animal es la clase padre. Encima de la clase Animal, crea una clase pública llamada Perro que herede de Animal. Para establecer la herencia, utiliza la palabra extends seguida del nombre de la clase padre.",
+    "codigo_base": "public class Perro {\n\n}\n\npublic class Animal {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n}",
+    "pista": "La clase hija debe llamarse Perro. Para indicar que una clase hereda de otra, escribe extends entre el nombre de la clase hija y el nombre de la clase padre. En este caso, después de Perro debes escribir extends Animal. No necesitas agregar ningún atributo dentro de Perro.",
+    "leccion_corta": "La herencia permite crear una clase a partir de otra. La clase hija puede heredar características de la clase padre. En Java se utiliza la palabra extends para establecer esta relación.",
+    "solucion_esperada": "public class Perro extends Animal {\n\n}\n\npublic class Animal {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n}"
+  },
+  {
+    "titulo": "Agregar un atributo a la clase padre",
+    "dificultad": "facil",
+    "enunciado": "Dentro de la clase Animal, agrega un nuevo atributo privado de tipo String llamado raza.",
+    "codigo_base": "public class Perro extends Animal {\n\n}\n\npublic class Animal {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n}",
+    "pista": "El nuevo atributo debe estar dentro de las llaves de la clase Animal, no dentro de Perro. Comienza la declaración con private, utiliza String como tipo y llama al atributo raza. Recuerda terminar la declaración con punto y coma.",
+    "leccion_corta": "Los atributos de una clase padre forman parte de la estructura que comparten sus clases hijas. Al agregar un atributo a Animal, las clases que heredan de Animal también forman parte de esa jerarquía.",
+    "solucion_esperada": "public class Perro extends Animal {\n\n}\n\npublic class Animal {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n    private String raza;\n}"
+  },
+  {
+    "titulo": "Sobrescribir un método con Override",
+    "dificultad": "medio",
+    "enunciado": "Dentro de la clase Animal, crea un método público llamado hacerSonido que no reciba parámetros, no retorne ningún valor y utilice System.out.println para mostrar el texto \"Sonido de animal\". Después, dentro de la clase Perro, sobrescribe el método hacerSonido utilizando la anotación @Override. El método hacerSonido de Perro debe utilizar System.out.println para mostrar el texto \"Guau\".",
+    "codigo_base": "public class Perro extends Animal {\n\n}\n\npublic class Animal {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n    private String raza;\n\n}",
+    "pista": "Primero crea hacerSonido dentro de Animal. Debe ser public, utilizar void, llamarse hacerSonido y tener los paréntesis vacíos. Dentro debe aparecer System.out.println(\"Sonido de animal\"). Después crea otro método con exactamente el mismo nombre y parámetros dentro de Perro. Antes del método de Perro escribe @Override. El método de Perro debe mostrar \"Guau\".",
+    "leccion_corta": "Sobrescribir un método significa proporcionar en una clase hija una nueva implementación de un método heredado. La anotación @Override indica que el método está sobrescribiendo un método de la clase padre.",
+    "solucion_esperada": "public class Perro extends Animal {\n\n    @Override\n    public void hacerSonido() {\n        System.out.println(\"Guau\");\n    }\n\n}\n\npublic class Animal {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n    private String raza;\n\n    public void hacerSonido() {\n        System.out.println(\"Sonido de animal\");\n    }\n}"
+  },
+  {
+    "titulo": "Crear un constructor en la clase padre",
+    "dificultad": "medio",
+    "enunciado": "Dentro de la clase Animal, crea un constructor público que reciba tres parámetros: un String llamado nombre, un int llamado edad y un boolean llamado activo. Dentro del constructor, utiliza estos parámetros para inicializar los atributos nombre, edad y activo.",
+    "codigo_base": "public class Perro extends Animal {\n\n    @Override\n    public void hacerSonido() {\n        System.out.println(\"Guau\");\n    }\n\n}\n\npublic class Animal {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n    private String raza;\n\n    public void hacerSonido() {\n        System.out.println(\"Sonido de animal\");\n    }\n\n}",
+    "pista": "Un constructor debe tener exactamente el mismo nombre que la clase, por lo que debe llamarse Animal. No debes escribir ningún tipo de retorno. El constructor debe recibir String nombre, int edad y boolean activo. Como los parámetros tienen el mismo nombre que los atributos, utiliza this.nombre = nombre, this.edad = edad y this.activo = activo.",
+    "leccion_corta": "Un constructor puede recibir varios parámetros para establecer el estado inicial de un objeto. Cuando un parámetro tiene el mismo nombre que un atributo, this permite distinguir el atributo del parámetro.",
+    "solucion_esperada": "public class Perro extends Animal {\n\n    @Override\n    public void hacerSonido() {\n        System.out.println(\"Guau\");\n    }\n\n}\n\npublic class Animal {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n    private String raza;\n\n    public void hacerSonido() {\n        System.out.println(\"Sonido de animal\");\n    }\n\n    public Animal(String nombre, int edad, boolean activo) {\n        this.nombre = nombre;\n        this.edad = edad;\n        this.activo = activo;\n    }\n}"
+  },
+  {
+    "titulo": "Crear un constructor con super",
+    "dificultad": "medio",
+    "enunciado": "Dentro de la clase Perro, crea un constructor público que reciba tres parámetros: un String llamado nombre, un int llamado edad y un boolean llamado activo. Dentro del constructor, utiliza super para enviar los tres parámetros al constructor de la clase Animal. No asignes directamente los parámetros a los atributos de Animal dentro del constructor de Perro.",
+    "codigo_base": "public class Perro extends Animal {\n\n    @Override\n    public void hacerSonido() {\n        System.out.println(\"Guau\");\n    }\n\n}\n\npublic class Animal {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n    private String raza;\n\n    public void hacerSonido() {\n        System.out.println(\"Sonido de animal\");\n    }\n\n    public Animal(String nombre, int edad, boolean activo) {\n        this.nombre = nombre;\n        this.edad = edad;\n        this.activo = activo;\n    }\n}",
+    "pista": "El constructor debe llamarse Perro y recibir exactamente los parámetros String nombre, int edad y boolean activo. Dentro del constructor no necesitas utilizar this para asignar los atributos. Utiliza super para llamar al constructor de la clase padre. Después de super escribe los tres parámetros en el mismo orden: nombre, edad y activo. La instrucción debe terminar con punto y coma.",
+    "leccion_corta": "La palabra super permite llamar al constructor de la clase padre desde el constructor de la clase hija. De esta forma, la clase hija puede enviar al padre los valores necesarios para inicializar la parte heredada del objeto.",
+    "solucion_esperada": "public class Perro extends Animal {\n\n    @Override\n    public void hacerSonido() {\n        System.out.println(\"Guau\");\n    }\n\n    public Perro(String nombre, int edad, boolean activo) {\n        super(nombre, edad, activo);\n    }\n\n}\n\npublic class Animal {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n    private String raza;\n\n    public void hacerSonido() {\n        System.out.println(\"Sonido de animal\");\n    }\n\n    public Animal(String nombre, int edad, boolean activo) {\n        this.nombre = nombre;\n        this.edad = edad;\n        this.activo = activo;\n    }\n}"
+  },
+  {
+    "titulo": "Crear otra clase hija",
+    "dificultad": "facil",
+    "enunciado": "La clase Animal es la clase padre y la clase Perro ya hereda de ella. Ahora crea una nueva clase pública llamada Gato que también herede directamente de la clase Animal. Utiliza extends para establecer la herencia y no agregues atributos ni métodos dentro de Gato.",
+    "codigo_base": "public class Perro extends Animal {\n\n    @Override\n    public void hacerSonido() {\n        System.out.println(\"Guau\");\n    }\n\n    public Perro(String nombre, int edad, boolean activo) {\n        super(nombre, edad, activo);\n    }\n\n}\n\npublic class Gato {\n\n}\n\npublic class Animal {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n    private String raza;\n\n    public void hacerSonido() {\n        System.out.println(\"Sonido de animal\");\n    }\n\n    public Animal(String nombre, int edad, boolean activo) {\n        this.nombre = nombre;\n        this.edad = edad;\n        this.activo = activo;\n    }\n}",
+    "pista": "La clase nueva debe llamarse Gato. Debe estar relacionada directamente con Animal, no con Perro. Para establecer la herencia escribe extends entre Gato y Animal. La declaración debe comenzar con public class.",
+    "leccion_corta": "Una misma clase padre puede tener varias clases hijas. Perro y Gato pueden heredar directamente de Animal sin que una clase hija tenga que heredar de la otra.",
+    "solucion_esperada": "public class Perro extends Animal {\n\n    @Override\n    public void hacerSonido() {\n        System.out.println(\"Guau\");\n    }\n\n    public Perro(String nombre, int edad, boolean activo) {\n        super(nombre, edad, activo);\n    }\n\n}\n\npublic class Gato extends Animal {\n\n}\n\npublic class Animal {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n    private String raza;\n\n    public void hacerSonido() {\n        System.out.println(\"Sonido de animal\");\n    }\n\n    public Animal(String nombre, int edad, boolean activo) {\n        this.nombre = nombre;\n        this.edad = edad;\n        this.activo = activo;\n    }\n}"
+  },
+  {
+    "titulo": "Crear una clase que hereda de una clase hija",
+    "dificultad": "medio",
+    "enunciado": "Crea una clase pública llamada PastorAleman que herede de la clase Perro. La clase PastorAleman debe utilizar extends para establecer la herencia. Dentro de PastorAleman, crea un atributo privado de tipo String llamado color.",
+    "codigo_base": "public class Perro extends Animal {\n\n    @Override\n    public void hacerSonido() {\n        System.out.println(\"Guau\");\n    }\n\n    public Perro(String nombre, int edad, boolean activo) {\n        super(nombre, edad, activo);\n    }\n\n}\n\npublic class Gato extends Animal {\n\n}\n\npublic class PastorAleman {\n\n}\n\npublic class Animal {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n    private String raza;\n\n    public void hacerSonido() {\n        System.out.println(\"Sonido de animal\");\n    }\n\n    public Animal(String nombre, int edad, boolean activo) {\n        this.nombre = nombre;\n        this.edad = edad;\n        this.activo = activo;\n    }\n}",
+    "pista": "La clase nueva debe llamarse PastorAleman. En este ejercicio no debe heredar directamente de Animal, sino de Perro. Escribe extends Perro en la declaración de la clase. Después, dentro de las llaves de PastorAleman, crea un atributo utilizando private, String y el nombre color.",
+    "leccion_corta": "La herencia puede tener varios niveles. Una clase puede heredar de otra clase que, a su vez, hereda de una tercera clase. En este caso, PastorAleman hereda de Perro y Perro hereda de Animal.",
+    "solucion_esperada": "public class Perro extends Animal {\n\n    @Override\n    public void hacerSonido() {\n        System.out.println(\"Guau\");\n    }\n\n    public Perro(String nombre, int edad, boolean activo) {\n        super(nombre, edad, activo);\n    }\n\n}\n\npublic class Gato extends Animal {\n\n}\n\npublic class PastorAleman extends Perro {\n    private String color;\n}\n\npublic class Animal {\n    private String nombre;\n    private int edad;\n    private boolean activo;\n    private String raza;\n\n    public void hacerSonido() {\n        System.out.println(\"Sonido de animal\");\n    }\n\n    public Animal(String nombre, int edad, boolean activo) {\n        this.nombre = nombre;\n        this.edad = edad;\n        this.activo = activo;\n    }\n}"
+  }
 ]
